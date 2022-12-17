@@ -49,6 +49,7 @@ export const Container = styled.div`
         border-radius: 30px;
         cursor: pointer;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .backButton {

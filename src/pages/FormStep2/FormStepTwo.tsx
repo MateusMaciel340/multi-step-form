@@ -14,7 +14,7 @@ export const FormStepTwo = () => {
 
     useEffect(() => {
         if (state.name === "") {
-            navigate("/step3");
+            navigate("/");
         } else {
             dispatch({
                 type: FormActions.setCurrentStep,
@@ -25,7 +25,7 @@ export const FormStepTwo = () => {
 
     const handleNextStep = () => {
         if (state.name !== "") {
-
+            navigate("/step3");
         } else {
             alert("Preencha os campos!");
         }

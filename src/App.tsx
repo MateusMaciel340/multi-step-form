@@ -1,6 +1,13 @@
+import { Router } from "./routes/Router";
+import { FormProvider } from "./contexts/FormContext";
+
+import "./styles/AppStyle.css";
+
 const App = () => {
     return (
-        <h1>Hello World!</h1>
+        <FormProvider>
+            <Router />
+        </FormProvider>
     );
 }
 
